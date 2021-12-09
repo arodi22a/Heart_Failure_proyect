@@ -81,7 +81,8 @@ ggplot(data, aes(x = Max_HR, fill = Sex)) +
   ggtitle("Boxplots de los máximos de frecuencias cardiacas por sexo ") +  
   xlab("Max_HR") 
 
-# grafico de barras de 
+# Grafico de dispersión entre Colesterol y Maximo de Frecuencia Cardiaca alcanzada, separada por fallecimientos.
+ 
 
 ggplot(data, aes(x=Cholesterol,y=Max_HR),color=Default) + 
   geom_point() + theme_light()+ facet_wrap("Heart_Disease")
