@@ -85,7 +85,7 @@ ggplot(data, aes(x = Max_HR, fill = Sex)) +
 
 ggplot(data, aes(x=Cholesterol,y=Max_HR),color=Default) + 
   geom_point() + theme_light()+ facet_wrap("Heart_Disease")
-  ggtitle("Tipo de dolor de pecho y Colesterol, divididos por sexo.") +
+  ggtitle("Grafico de dispersión entre Colesterol y Maximo de Frecuencia Cardiaca alcanzada, separada por fallecimientos.") +
   xlab("ChestTA: angina típica, ATA: angina atípica, NAP: dolor no anginal, ASY: asintomático")
 
 # Importamos una paquetería que nos va a ayudar a ajustar una normal a nuestros datos
