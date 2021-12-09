@@ -134,9 +134,7 @@ summary(m1)
 m2 <- lm(Heart_Disease ~ Age + Cholesterol + Max_HR + Fasting_BS)
 summary(m2)
 
-# El modelo no tuvo una mejora sifnificativa, por lo que realiozamos el siguiente ajuste
-# # Y = beta0 + beta1*Age + beta2*Cholesterol + beta3*Max_HR + beta4*Fasting_BS + 
-#       beta6*Age*Cholesterol + beta7*Cholesterol*Max_HR + beta8*Age*Resting_BP +  e
+# El modelo no tuvo una mejora sifnificativa, por lo que realiozamos los siguientes ajustes
 
 mfull1 <- lm(Heart_Disease ~ Age + Cholesterol + Max_HR + Resting_BP +Age*Max_HR +
               Cholesterol*Max_HR + Resting_BP*Max_HR)
@@ -155,13 +153,13 @@ mfull4 <- lm(Heart_Disease ~ Age + Cholesterol + Max_HR + Resting_BP +Age*Restin
                Cholesterol*Resting_BP + Resting_BP*Max_HR)
 
 summary(mfull4)
-# Como el valor de Adjusted R squared fue el mayor de todos los anterios, lo comparon con
+# Como el valor de Adjusted R squared de mfull4 fue el mayor de todos los anterios, lo comparon con
 # m1
 
 # La prueba de si el efecto de los predictores depende de la variable Resting_BP
 # puede lograrse usando la siguiente prueba-F parcial.
 
-anova(m2,mfull2)
+anova(m1,mfull2)
 
 # la anova no fue exitosa, porque no arrojó un P-value
 
