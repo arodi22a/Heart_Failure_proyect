@@ -1,6 +1,12 @@
+# Análisis exploratorio y Análisis de datos con R.
+
 # Importamos nuestros datos
 data <- read.csv("/home/armd22a/Desktop/BEDU/modulo2/Programacion-R-Santander-2021-main/proyecto/heart.csv")
+# aquí introducen la dirreción de donde tengan guardado su dataset
+
+# Convertimos a dataframe 
 data <- as.data.frame(data)
+# Echamos un vistazo a los datos
 head(data)
 str(data)
 
