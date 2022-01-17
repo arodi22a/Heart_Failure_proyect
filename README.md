@@ -1,4 +1,4 @@
-# Heart_Failure_proyect
+## Proyecto: Predicción de supervivencia de pacientes con insuficiencia cardiaca
 
 Este es un proyecto resultado de lo aprendido del curso de Ciencia de Datos de BEDU.
 
