@@ -1,6 +1,5 @@
 ## Proyecto: Predicción de supervivencia de pacientes con insuficiencia cardiaca
 
-Este es un proyecto resultado de lo aprendido del curso de Ciencia de Datos de BEDU.
 
 En este proyecto se realiza una análisis de datos de una base de datos obtenida de Kaggle (https://www.kaggle.com/fedesoriano/heart-failure-prediction). Este dataset contiene información clínica de 918 pacientes y si murieron por una deficiencia cardiaca o no. El objetivo de este proyecto es analizar las posibles relaciones que haya entre las variables clínicas para encontrar si hay una correlación las muertes por enfermedad cardiaca. Además, se usará la Regresión Logística para predecir si un paciente puede morir o no por una enfermedad cardiaca.
 
